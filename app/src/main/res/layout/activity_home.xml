@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".HomeActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AdsBanner">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutFrame1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/g1" />
+
+                        <ImageView
+                            android:id="@+id/gameimg1"
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="36dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/bt2"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutFrame2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/g2" />
+
+                        <ImageView
+                            android:id="@+id/gameimg2"
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="36dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/bt2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutTop"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutFrame4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/g4" />
+
+                        <ImageView
+                            android:id="@+id/gameimg4"
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="36dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/bt2"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutFrame5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/g5" />
+
+                        <ImageView
+                            android:id="@+id/gameimg5"
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="36dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/bt2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutMiddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutBottom"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutFrame3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/g3" />
+
+                        <ImageView
+                            android:id="@+id/gameimg3"
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="36dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/bt2" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+    <com.appodeal.ads.BannerView
+        android:id="@+id/AdsBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+</RelativeLayout>

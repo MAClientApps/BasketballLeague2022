@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "928672664012",
+    "project_id": "basketball-league-proplus",
+    "storage_bucket": "basketball-league-proplus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928672664012:android:e8831890ba30a4859b3569",
+        "android_client_info": {
+          "package_name": "com.bsktbllegpropls.bsktbllgpplsap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928672664012-bjsevgverb9d91893shpk93lue8dv9iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLI8H2Drmzh68Ug3dWx_wnw-GSQ-ynOhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928672664012-bjsevgverb9d91893shpk93lue8dv9iv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
