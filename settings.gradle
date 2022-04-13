@@ -9,5 +9,6 @@ dependencyResolutionManagement {
         maven {
             url "https://artifactory.appodeal.com/appodeal"
         }
+        maven { url "https://libraryartifacts.s3.us-west-2.amazonaws.com/Android/autosdk/" }
     }
 }

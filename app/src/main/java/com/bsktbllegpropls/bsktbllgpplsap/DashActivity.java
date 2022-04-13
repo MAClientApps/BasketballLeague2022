@@ -12,7 +12,7 @@ import com.appodeal.ads.Appodeal;
 import com.appodeal.ads.RewardedVideoCallbacks;
 import com.bsktbllegpropls.bsktbllgpplsap.myutility.Content;
 
-public class DashActivity extends AppCompatActivity implements RewardedVideoCallbacks {
+public class DashActivity extends AppCompatActivity {
 
 
     Button btnplay;
@@ -24,7 +24,6 @@ public class DashActivity extends AppCompatActivity implements RewardedVideoCall
         setContentView(R.layout.activity_dash);
 
         btnplay = findViewById(R.id.btnplay);
-        //appBtnPremium = findViewById(R.id.appBtnPremium);
 
         btnplay.setOnClickListener(v -> {
 
@@ -35,7 +34,6 @@ public class DashActivity extends AppCompatActivity implements RewardedVideoCall
         if (Content.isNetworkAvailabe(this)) {
             Content.AdInitializetion(DashActivity.this);
             Content.AdShowBanner(DashActivity.this, R.id.AdsBanner);
-            Appodeal.setRewardedVideoCallbacks(this);
         }
 
         if (isInternetConnection()) {
@@ -47,43 +45,6 @@ public class DashActivity extends AppCompatActivity implements RewardedVideoCall
     private boolean isInternetConnection() {
         return ((ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE)).getActiveNetworkInfo() != null;
     }
-    @Override
-    public void onRewardedVideoLoaded(boolean isPrecache) {
-        Content.AdShowVideo(DashActivity.this);
-    }
-    @Override
-    public void onRewardedVideoFailedToLoad() {
 
-    }
-
-    @Override
-    public void onRewardedVideoShown() {
-
-    }
-
-    @Override
-    public void onRewardedVideoShowFailed() {
-
-    }
-
-    @Override
-    public void onRewardedVideoFinished(double amount, String name) {
-
-    }
-
-    @Override
-    public void onRewardedVideoClosed(boolean finished) {
-
-    }
-
-    @Override
-    public void onRewardedVideoExpired() {
-
-    }
-
-    @Override
-    public void onRewardedVideoClicked() {
-
-    }
 
 }

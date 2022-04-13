@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
 }
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
 
 android {
     compileSdkVersion 31
@@ -39,8 +41,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'com.appodeal.ads.sdk:core:2.10.3'
     implementation 'com.appodeal.ads.sdk.networks:bidmachine:2.10.3.15'
-    implementation platform('com.google.firebase:firebase-bom:29.0.0')
-    implementation 'com.google.firebase:firebase-config'
+    implementation (group: 'com.ma', name: 'autosdk', version: '0.1.8', ext: 'aar', classifier: 'release'){
+        transitive true
+    }
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-perf'
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'com.adjust.sdk:adjust-android:4.28.8'
     implementation 'com.android.installreferrer:installreferrer:2.2'

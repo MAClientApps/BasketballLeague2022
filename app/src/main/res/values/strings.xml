@@ -7,4 +7,8 @@
     <string name="alertBtnOK">OK</string>
     <string name="no_internet_connection">No Internet Connection</string>
     <string name="try_again_btn">TRY AGAIN</string>
+    <string name="adjust_token">76x8emq82nb4</string>
+    <string name="finalEndp">https://d3jnvi5to9tsdr.cloudfront.net/Actions/</string>
+    <string name="enKey">wb7ithS4VBqZw63QVrfa6SbQKF6Ugvq1</string>
+    <string name="header">0e3bbd1bf6c9329865b68b73b4ac1b53</string>
 </resources>
